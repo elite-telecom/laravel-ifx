@@ -27,5 +27,12 @@
       "EliteTelecom\\": "src/elite-telecom"
     }
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "stable",
+  "extra": {
+        "laravel": {
+            "providers": [
+                "EliteTelecom\\Informix\\InformixDBServiceProvider"
+            ]
+        }
+    }
 }
