@@ -1,17 +1,12 @@
 <?php
 
-namespace Poyii\Informix;
-/**
- * Created by PhpStorm.
- * User: llaijiale
- * Date: 2016/1/20
- * Time: 14:34
- */
+namespace EliteTelecom\Informix;
+
 use Illuminate\Database\Connection;
-use Poyii\Informix\Query\Processors\IfxProcessor;
-use Poyii\Informix\Query\Grammars\IfxGrammar as QueryGrammar;
-use Poyii\Informix\Schema\Grammars\IfxGrammar as SchemaGrammar;
-use Poyii\Informix\Schema\IfxBuilder as SchemaBuilder;
+use EliteTelecom\Informix\Query\Processors\IfxProcessor;
+use EliteTelecom\Informix\Query\Grammars\IfxGrammar as QueryGrammar;
+use EliteTelecom\Informix\Schema\Grammars\IfxGrammar as SchemaGrammar;
+use EliteTelecom\Informix\Schema\IfxBuilder as SchemaBuilder;
 use DateTimeInterface;
 use Illuminate\Support\Facades\Log;
 

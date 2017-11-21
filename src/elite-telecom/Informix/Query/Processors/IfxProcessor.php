@@ -1,6 +1,6 @@
 <?php
 
-namespace Poyii\Informix\Query\Processors;
+namespace EliteTelecom\Informix\Query\Processors;
 
 use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Query\Processors\Processor;

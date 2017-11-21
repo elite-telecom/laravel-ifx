@@ -24,7 +24,7 @@ Once Composer has installed or updated your packages you need to register Oracle
 the `providers` key and add:
 
 ```php
-Poyii\Informix\InformixDBServiceProvider::class,
+EliteTelecom\Informix\InformixDBServiceProvider::class,
 ```
 
 Finally you need to publish a configuration file by running the following Artisan command.

@@ -1,16 +1,9 @@
 <?php
 
-namespace Poyii\Informix\Query\Grammars;
+namespace EliteTelecom\Informix\Query\Grammars;
 
 use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Query\Grammars\Grammar;
-
-/**
- * Created by PhpStorm.
- * User: llaijiale
- * Date: 2016/1/19
- * Time: 0:53
- */
 
 class IfxGrammar extends Grammar {
 

@@ -1,13 +1,12 @@
 <?php
 
-namespace Poyii\Informix\Connectors;
+namespace EliteTelecom\Informix\Connectors;
 
 use Illuminate\Database\Connectors\Connector;
 use Illuminate\Database\Connectors\ConnectorInterface;
 use PDO;
 use Illuminate\Support\Arr;
 use Exception;
-
 
 class IfxConnector extends Connector implements ConnectorInterface
 {

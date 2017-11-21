@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: llaijiale
- * Date: 2017/8/2
- * Time: 10:40
- */
 
-namespace Poyii\Informix;
+namespace EliteTelecom\Informix;
 
 use Illuminate\Support\ServiceProvider;
 /**
@@ -30,7 +24,7 @@ class InformixDBServiceProvider extends ServiceProvider
     /**
      * Register the service provider.
      *
-     * @returns \Poyii\Informix\IfxConnection
+     * @returns \EliteTelecom\Informix\IfxConnection
      */
     public function register()
     {

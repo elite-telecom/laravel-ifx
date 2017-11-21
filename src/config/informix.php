@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: llaijiale
- * Date: 2017/8/2
- * Time: 10:21
- */
 
 return [
     'informix' => [
