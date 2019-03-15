@@ -53,7 +53,7 @@ class IfxConnection extends Connection
                     $value = 0;
                 }
                 if(is_string($value)) {
-                    $value = iconv($client_encoding, $db_encoding, $value);
+                    $value = $this->convertCharset($client_encoding, $db_encoding, $value);
                 }
             }
         } else {
@@ -84,7 +84,7 @@ class IfxConnection extends Connection
 //            return $value;
 //        }
 //        Log::debug("encoding: ".$in_encoding." value ".$value);
-
+        //return mb_convert_encoding(trim($value), $out_encoding);
         return iconv($in_encoding, "{$out_encoding}//IGNORE", trim($value));
     }
 
@@ -102,17 +102,15 @@ class IfxConnection extends Connection
                         if(is_array($result) || is_object($result)){
                             foreach($result as $key=>&$value){
                                 if(is_string($value)){
-
-                                    //$value = iconv($db_encoding, $client_encoding, $value);
                                     $value = $this->convertCharset($db_encoding, $client_encoding, $value);
                                 }
                             }
                         } else if(is_string($result)) {
-                            $result = iconv($db_encoding, $client_encoding, $result);
+                            $result = $this->convertCharset($db_encoding, $client_encoding, $result);
                         }
                     }
                 } else if(is_string($results)) {
-                    $results = iconv($db_encoding, $client_encoding, $results);
+                    $results = $this->convertCharset($db_encoding, $client_encoding, $results);
                 }
             }
         }

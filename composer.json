@@ -1,34 +1,32 @@
 {
-  "name": "elite-telecom/laravel-ifx",
-  "description": "Informix DB driver for Laravel 5",
-  "keywords": ["informix", "laravel", "laravel 5", "ifx"],
-  "license": "MIT",
-  "version": "1.0.3",
-  "authors": [
-    {
-      "name": "tabusheikh",
-      "email": "tabusheikh@networkip.net"
-    }
-  ],
-  "require": {
-    "php": ">=5.6.0",
-    "illuminate/support": "5.5.*",
-    "illuminate/database": "5.5.*",
-    "illuminate/pagination": "5.5.*"
-  },
-  "require-dev": {
-    "fzaninotto/faker": "~1.4",
-    "mockery/mockery": "1.0",
-    "phpunit/phpunit": "6.4.4",
-    "phpspec/phpspec": "4.2.2"
-  },
-  "autoload": {
-    "psr-4": {
-      "EliteTelecom\\": "src/elite-telecom"
-    }
-  },
-  "minimum-stability": "stable",
-  "extra": {
+    "name": "elite-telecom/laravel-ifx",
+    "description": "Informix DB driver for Laravel 5",
+    "keywords": ["informix", "laravel", "laravel 5", "ifx"],
+    "license": "MIT",
+    "version": "1.0.4",
+    "authors": [{
+        "name": "tabusheikh",
+        "email": "tabusheikh@networkip.net"
+    }],
+    "require": {
+        "php": ">=5.6.0",
+        "illuminate/support": "5.5.*",
+        "illuminate/database": "5.5.*",
+        "illuminate/pagination": "5.5.*"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "1.0",
+        "phpunit/phpunit": "6.4.4",
+        "phpspec/phpspec": "4.2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "EliteTelecom\\": "src/elite-telecom"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
         "laravel": {
             "providers": [
                 "EliteTelecom\\Informix\\InformixDBServiceProvider"
